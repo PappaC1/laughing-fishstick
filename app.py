@@ -198,7 +198,5 @@ with tab_races:
     st.subheader(f"Race {int(sel_r)} — {course_name} ({int(next(iter(r_field['distance_m'])))}m)")
     badges = {"Probable Winner": "🥇", "Value Bet": "💎", "Danger Horse": "⚠️"}
     for _, row in r_picks.iterrows():
-        with st.container(border=True):                        st.markdown(f"**{badges[row['pick_type']]} {row['pick_type']}: #{int(row['saddle_number'])} {row['horse_name']}** — Win: {row['win_prob']:.1%} | Odds: {row['odds']:.2f}")  st.markdown(f"**{badges[row['pick_type']]} {row['pick_type']}: #{int(row['saddle_number'])} {row['horse_name']}** — Win: {row['win_prob']:.1%} | Odds: {row['odds']:.2f}")
-            st.markdown(f"**{badges[row['pick_type']]} {row['pick_type']}: #{int(row['saddle_number'])} {row['horse_name']}** — Win: {row['win_prob']:.1%} | Odds: {row['odds']:.2f}")
+        with st.container(border=True):st.markdown(f"**{badges[row['pick_type']]} {row['pick_type']}: #{int(row['saddle_number'])} {row['horse_name']}** — Win: {row['win_prob']:.1%} | Odds: {row['odds']:.2f}")
 
- 
